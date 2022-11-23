@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import LinkList from '../components/LinkList';
 
-const Link = () => {
-  return (
-    <div>Link</div>
-  )
-}
+const Links = () => {
+  return <LinkList />;
+};
 
-export default Link
+export default Links;
