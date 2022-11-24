@@ -23,13 +23,14 @@ const About = () => {
           <strong>About Me</strong>
         </h4>
         <h5 className="text-white mb-5 max-button">
-          I Am A Backend Developer
+        Full Stack Developer (Interested in Backend Development)
           Good At Problem Solving And Passionate To Learn New Things
         </h5>
         <Button
           variant="outline-light"
           href={'https://drive.google.com/drive/u/0/folders/1zmfG3Qfkki-K31HZ19L9qcffvyyx4YsK'}
           size="lg"
+          target="_blank"
           download
         >
           My Resume

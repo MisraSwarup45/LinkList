@@ -46,6 +46,7 @@ const LinkButton = (props) => {
       href={props.link}
       className="mb-3 max-button"
       size="lg"
+      target="_blank"
       block
     >
       {icon}
