@@ -14,6 +14,8 @@ const LinkList = () => {
     'https://www.facebook.com/misraswarup45/',
   ];
 
+  let year = new Date().getFullYear;
+
   return (
     <ListGroup>
       <div className="mx-lg-5 mr-3 ml-3 d-flex flex-column align-items-center">
@@ -22,7 +24,7 @@ const LinkList = () => {
           width="100"
           height="100"
           borderRadius= '50%!important'
-          src={process.env.PUBLIC_URL + 'PHOTO.JPG'}
+          src={process.env.PUBLIC_URL + 'PHOTO.png'}
           className="imageStyle"
           rounded
         />
@@ -30,7 +32,9 @@ const LinkList = () => {
         {links.map((link) => (
           <LinkButton key={link} link={link} />
         ))}
+        {/* <h4>{year}</h4> */}
       </div>
+      
     </ListGroup>
   );
 };

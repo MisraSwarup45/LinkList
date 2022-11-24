@@ -1,31 +1,31 @@
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Switch
+  Redirect,
+  Switch,
 } from 'react-router-dom';
+import About from './pages/About';
+import Links from './pages/Link';
+import MainNavigation from './components/MainNavigation';
 
-import About from "./pages/About";
-import Link from './pages/Link';
-import MainNavigation from "./components/MainNavigation";
-
-function App() {
+const App = () => {
   return (
     <Router>
-    <MainNavigation />
+      <MainNavigation />
       <main>
         <Switch>
           <Route path="/" exact>
-            <Link />
+            <Links />
           </Route>
           <Route path="/about" exact>
             <About />
           </Route>
+          <Redirect to="/" />
         </Switch>
       </main>
     </Router>
   );
-}
+};
 
 export default App;

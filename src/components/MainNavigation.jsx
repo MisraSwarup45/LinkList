@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import about from '../pages/About';
 import './MainNavigation.scss';
 
 const MainNavigation = () => {
@@ -32,9 +31,9 @@ const MainNavigation = () => {
       >
         <h4 style={{ margin: '0' }}>Swarup Kumar Misra</h4>
       </Navbar.Brand>
-      <Navbar.Collapse>
+      <Navbar.Collapse className="justify-content-end">
         <Nav
-          className="justify-content"
+          className="justify-content-end"
           activeKey={currentKey}
           onSelect={(selectedKey) => {
             setCurrentKey(selectedKey);
